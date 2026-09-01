@@ -59,3 +59,9 @@ dados %>%
     select(-media_at)
 
 x <- c(30,16,20,3)
+f (x1)
+
+#trabalha com vetores, se a função não suportar esse formato, pode usar rowwise()
+
+#Aula2 01/09
+
