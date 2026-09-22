@@ -1,0 +1,9 @@
+\frametitle{O ambiente frame}
+
+Cada slide é criado utilizando o ambiente \texttt{frame}.
+
+\begin{verbatim}
+\begin{frame}{Título}
+
+    Conteúdo do slide
+

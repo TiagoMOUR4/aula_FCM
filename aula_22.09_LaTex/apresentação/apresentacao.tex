@@ -1,0 +1,343 @@
+\documentclass{beamer}
+
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+% Tema
+\usetheme{Metropolis}
+\usecolortheme{default}
+
+% Informações da apresentação
+\title{Introdução ao LaTeX para Apresentações}
+\subtitle{Criando slides com Beamer}
+\author{Tiago Luis de Oliveira Moura}
+\date{\today}
+
+\begin{document}
+
+% ==================================================
+% CAPA
+% ==================================================
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% ==================================================
+% SUMÁRIO
+% ==================================================
+
+\begin{frame}{Roteiro}
+    \tableofcontents
+\end{frame}
+
+% ==================================================
+\section{O que é LaTeX?}
+% ==================================================
+
+\begin{frame}{O que é LaTeX?}
+
+    \begin{itemize}
+        \item LaTeX é um sistema de preparação de documentos.
+        \item É muito utilizado em artigos, teses, relatórios e apresentações científicas.
+        \item O usuário descreve a estrutura do documento utilizando comandos.
+        \item O LaTeX cuida da formatação e da composição final.
+    \end{itemize}
+
+\end{frame}
+
+% ==================================================
+\section{Beamer}
+% ==================================================
+
+\begin{frame}{O que é Beamer?}
+
+    O \textbf{Beamer} é uma classe do LaTeX desenvolvida para a criação de apresentações.
+
+    \vspace{0.5cm}
+
+    Para utilizá-lo, iniciamos o documento com:
+
+    \vspace{0.3cm}
+
+    \begin{center}
+        \texttt{\textbackslash documentclass\{beamer\}}
+    \end{center}
+
+\end{frame}
+
+% ==================================================
+\section{Estrutura básica}
+% ==================================================
+
+\begin{frame}{Estrutura básica}
+
+    Uma apresentação Beamer possui uma estrutura semelhante a qualquer documento LaTeX.
+
+    \vspace{0.4cm}
+
+    \begin{block}{Código}
+        \texttt{\textbackslash documentclass\{beamer\}}\\[0.2cm]
+
+        \texttt{\textbackslash begin\{document\}}\\[0.2cm]
+
+        \hspace{0.5cm}
+        \texttt{\textbackslash begin\{frame\}\{Título\}}\\
+
+        \hspace{1cm}
+        \texttt{Conteúdo do slide}\\
+
+        \hspace{0.5cm}
+        \texttt{\textbackslash end\{frame\}}\\[0.2cm]
+
+        \texttt{\textbackslash end\{document\}}
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+
+\begin{frame}{O ambiente frame}
+
+    Cada slide da apresentação é criado utilizando um ambiente
+    \texttt{frame}.
+
+    \vspace{0.4cm}
+
+    \begin{block}{Exemplo}
+        \texttt{\textbackslash begin\{frame\}\{Meu título\}}\\[0.2cm]
+
+        \hspace{0.5cm}
+        \texttt{Conteúdo do slide}\\[0.2cm]
+
+        \texttt{\textbackslash end\{frame\}}
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+\section{Texto e listas}
+% ==================================================
+
+\begin{frame}{Listas}
+
+    Podemos organizar informações utilizando listas.
+
+    \vspace{0.3cm}
+
+    \begin{itemize}
+        \item Primeiro item
+        \item Segundo item
+        \item Terceiro item
+        \item Quarto item
+    \end{itemize}
+
+\end{frame}
+
+% ==================================================
+
+\begin{frame}{Listas numeradas}
+
+    Também podemos utilizar listas numeradas:
+
+    \begin{enumerate}
+        \item Instalar uma distribuição LaTeX
+        \item Criar um arquivo \texttt{.tex}
+        \item Escrever o documento
+        \item Compilar
+        \item Gerar o PDF
+    \end{enumerate}
+
+\end{frame}
+
+% ==================================================
+\section{Equações}
+% ==================================================
+
+\begin{frame}{Equações}
+
+    Uma das principais vantagens do LaTeX é a escrita de equações matemáticas.
+
+    \vspace{0.5cm}
+
+    \begin{equation}
+        c^2 = a^2 + b^2
+        \label{eq:pitagoras}
+    \end{equation}
+
+    \vspace{0.4cm}
+
+    A Equação \ref{eq:pitagoras} representa o teorema de Pitágoras.
+
+\end{frame}
+
+% ==================================================
+
+\begin{frame}{Código de uma equação}
+
+    Para criar uma equação numerada:
+
+    \vspace{0.4cm}
+
+    \begin{block}{Código}
+        \texttt{\textbackslash begin\{equation\}}\\
+
+        \hspace{0.5cm}
+        \texttt{c\^{}2 = a\^{}2 + b\^{}2}\\
+
+        \texttt{\textbackslash end\{equation\}}
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+\section{Imagens}
+% ==================================================
+
+\begin{frame}{Inserindo imagens}
+
+    Imagens podem ser inseridas utilizando o comando
+    \texttt{\textbackslash includegraphics}.
+
+    \vspace{0.5cm}
+
+    \begin{block}{Exemplo}
+        \texttt{\textbackslash includegraphics}\\
+        \texttt{[width=0.5\textbackslash linewidth]}\\
+        \texttt{\{imagem.pdf\}}
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+\section{Tabelas}
+% ==================================================
+
+\begin{frame}{Tabelas}
+
+    \begin{center}
+
+        \begin{tabular}{ccc}
+            \hline
+            A & B & C \\
+            \hline
+            1 & 2 & 3 \\
+            4 & 5 & 6 \\
+            7 & 8 & 9 \\
+            \hline
+        \end{tabular}
+
+    \end{center}
+
+\end{frame}
+
+% ==================================================
+
+\begin{frame}{Estrutura de uma tabela}
+
+    \begin{block}{Código}
+
+        \texttt{\textbackslash begin\{tabular\}\{ccc\}}\\[0.2cm]
+
+        \hspace{0.5cm}
+        \texttt{A \& B \& C \textbackslash\textbackslash}\\
+
+        \hspace{0.5cm}
+        \texttt{1 \& 2 \& 3 \textbackslash\textbackslash}\\
+
+        \hspace{0.5cm}
+        \texttt{4 \& 5 \& 6 \textbackslash\textbackslash}\\[0.2cm]
+
+        \texttt{\textbackslash end\{tabular\}}
+
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+\section{Links}
+% ==================================================
+
+\begin{frame}{Links}
+
+    O Beamer já possui suporte para hyperlinks.
+
+    \vspace{0.5cm}
+
+    Um exemplo:
+
+    \vspace{0.3cm}
+
+    \begin{center}
+        \href{https://www.tablesgenerator.com}{tablesgenerator.com}
+    \end{center}
+
+    \vspace{0.5cm}
+
+    O código correspondente é:
+
+    \begin{block}{Código}
+        \texttt{\textbackslash href\{URL\}\{texto\}}
+    \end{block}
+
+\end{frame}
+
+% ==================================================
+\section{Temas}
+% ==================================================
+
+\begin{frame}{Temas do Beamer}
+
+    O visual da apresentação pode ser modificado utilizando temas.
+
+    \vspace{0.3cm}
+
+    Esta apresentação utiliza:
+
+    \begin{center}
+        \texttt{\textbackslash usetheme\{Madrid\}}
+    \end{center}
+
+    Outros exemplos:
+
+    \begin{itemize}
+        \item Berlin
+        \item CambridgeUS
+        \item Copenhagen
+        \item Warsaw
+        \item Singapore
+        \item Boadilla
+    \end{itemize}
+
+\end{frame}
+
+% ==================================================
+\section{Conclusão}
+% ==================================================
+
+\begin{frame}{Conclusão}
+
+    \begin{itemize}
+        \item Beamer é a classe do LaTeX utilizada para apresentações.
+        \item Cada slide é construído com o ambiente \texttt{frame}.
+        \item É possível inserir equações, tabelas, imagens e links.
+        \item O conteúdo e a formatação ficam separados.
+        \item É particularmente útil para apresentações acadêmicas e científicas.
+    \end{itemize}
+
+\end{frame}
+
+% ==================================================
+
+\begin{frame}
+    \centering
+
+    {\Huge Obrigado!}
+
+    \vspace{0.8cm}
+
+    {\Large Dúvidas?}
+\end{frame}
+
+\end{document}

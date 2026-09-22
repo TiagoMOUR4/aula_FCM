@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    urlcolor=blue,
+    citecolor=red
+}
+
+\title{FCM2026 - LaTeX}
+\author{Tiago Luis de Oliveira Moura}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+Segundo Silva e Souza \cite{silva2024}, este é um exemplo
+de citação bibliográfica.
+
+\section{Inserção de imagem}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{LaTeX_logo.pdf}
+    \caption{Exemplo de figura}
+    \label{fig:figura1}
+\end{figure}
+
+A imagem utilizada pode ser vista
+\hyperref[fig:figura1]{nesta figura}.
+
+\section{inserir tabela}
+\begin{table}[H]
+\begin{tabular}{lllll}
+\multicolumn{1}{c}{teste} & \multicolumn{1}{c}{de} & \multicolumn{1}{c}{tabela} &  &  \\
+usando                    & o                      & \href{https://www.tablesgenerator.com}{tablesgenerator.com}       &  &  \\
+                          &                        &                            &  &  \\
+                          &                        &                            &  & 
+\end{tabular}
+\end{table}
+
+\section{Equações}
+
+\begin{equation}
+    c^2 = a^2 + b^2
+    \label{eq:eq1}
+\end{equation}
+podemos referenciar também equações, como a de \hyperref[eq:eq1]{pitagoras}
+
+
+
+\bibliographystyle{abntex2-num}
+\bibliography{referencias}
+
+\end{document}
