@@ -1,1 +1,18 @@
-Documento de resumo das ideias
+O presente documento tem como objetivo elucidar o processo usado para manipulação de dados e geração de arquivos, e serve como um guia para compreensão do projeto.
+
+A pasta de trabalho esta dividida em:
+
+- arquivos de dados
+- scripts
+- README
+- documentos
+
+A primeira pasta se destina principalmente aos arquivos de dataset, de onde foi feita a extração dos dados, bem como sua versão em SQL e após processamento.
+
+"scripts" apresenta os codigos usados para manipulação, geração de dados e imagens, para que possa ser consultado ao longo e ao final do projeto.
+
+A pasta "documentos" possui os arquivos de envio ao professor, como o resumo e a apresentação em slides.
+
+Por fim, "README" tem como objetivo facilitar a compreensão do trabalho e organizar as etapas de desenvolvimento do projeto.
+ 
+
