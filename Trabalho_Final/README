@@ -16,3 +16,35 @@ A pasta "documentos" possui os arquivos de envio ao professor, como o resumo e a
 Por fim, "README" tem como objetivo facilitar a compreensão do trabalho e organizar as etapas de desenvolvimento do projeto.
  
 
+
+
+
+# O que faz um jogo de tabuleiro ser bem avaliado?
+
+### Hipótese 1 – Jogos mais complexos são mais bem avaliados?
+- Variáveis: complexidade × nota média.
+
+### Hipótese 2 – Jogos com maior duração são considerados melhores?
+- Variáveis: duração da partida × nota média.
+
+### Hipótese 3 – Jogos com maior número de jogadores são mais populares?
+- Variáveis: número máximo de jogadores × número de avaliações.
+
+### Hipótese 4 – Jogos mais antigos são menos complexos?
+- Variáveis: ano de publicação × complexidade.
+
+### Hipótese 5 – Jogos mais complexos demandam mais tempo para jogar?
+- Variáveis: complexidade × duração da partida.
+
+### Hipótese 6 – Jogos mais complexos são mais populares?
+- Variáveis: complexidade × popularidade (número de avaliações).
+
+### Hipótese 7 – Como os jogos de tabuleiro evoluíram ao longo do tempo?
+- Variáveis: ano de publicação × diferentes características dos jogos:
+  - Número de jogadores (tendência a jogos mais individuais ou coletivos).
+  - Popularidade dos jogos.
+  - Complexidade dos jogos.
+  - Duração das partidas.
+
+### Hipótese 8 – Jogos mais bem avaliados são mais baixados?
+- Variáveis: nota média × número de downloads.
