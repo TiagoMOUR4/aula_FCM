@@ -17,6 +17,19 @@ Por fim, "README" tem como objetivo facilitar a compreensão do trabalho e organ
  
 
 
+#Prepareação dos dados:
+
+Algumas inconsistências foram identificados nos dados, entre elas notou-se: Número minimo de jogadores igual a zero ou excessivo, dados faltantes e datas negativas,
+
+Por esse motivo foram feitas as seguintes considerações:
+- Os dados correspondem à jogos dos ultimos 100 anos
+- A faixa de idade observada deve ser entre 1 e 18 anos de idade
+- Dados faltantes foram ignorados
+- A quantidade de jogadores esta entre 1 e 100
+- Dados nulos são desconsiderados
+- Os jogos são avaliados por, no mínimo, 30 pessoas
+
+
 
 
 # O que faz um jogo de tabuleiro ser bem avaliado?
