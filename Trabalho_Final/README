@@ -30,7 +30,8 @@ Por esse motivo foram feitas as seguintes considerações:
 - Os jogos são avaliados por, no mínimo, 30 pessoas
 
 
-
+#Conversão para SQL:
+a tabela em SQL foi gerada com auxilio do site: https://tableconvert.com/csv-to-sql. O arquivo gerado pelo site foi corrigido e depois implementado
 
 # O que faz um jogo de tabuleiro ser bem avaliado?
 
